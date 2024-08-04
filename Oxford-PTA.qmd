@@ -1,0 +1,239 @@
+---
+title: "The Patristic Text Archive (PTA)" 
+subtitle: "How to build a platform for critical digital editions of ancient Christian texts"
+author: 
+    - name: Annette von Stockhausen
+      orcid: 0000-0001-5382-6322
+      email: annette.von_stockhausen@bbaw.de
+      affiliations: Berlin-Brandenburgische Akademie der Wissenschaften
+date: 8 August 2024
+date-format: "D MMM YYYY"
+format: 
+  revealjs:
+    output-file: index
+    theme: [default, bbaw.scss]
+    slide-number: true 
+    show-slide-number: all
+    navigation-mode: vertical
+    controls: auto
+    controls-layout: bottom-right
+    pause: true
+    touch: true
+    preview-links: true
+    embed-resources: true
+    footer: |
+        Annette von Stockhausen: The Patristic Text Archive (PTA). How to build a platform for critical digital editions of ancient Christian texts
+    logo: images/Berlin-Brandenburgische_Akademie_der_Wissenschaften.png
+    title-slide-attributes:
+        data-background-image: images/by-sa.png, images/pta-logo.svg, images/qrcode-presentation.png
+        data-background-size: 8% auto, 15% auto, 10% auto
+        data-background-position: bottom 5% right 1%, top 1% left 1%, bottom 15% right 1%
+revealjs-plugins:
+  - pointer
+  - attribution
+---
+
+# The PTA as platform for digital critical editions (and beyond)
+
+## The [PTA](https://pta.bbaw.de) in a nutshell
+
+1.  **Publication platform (and tool) for Akademienvorhaben [„Die alexandrinische und antiochenische Bibelexegese in der Spätantike“](https://bibelexegese.bbaw.de)**
+2.  Also archive for **editions** (in **all languages**, Christian texts from antiquity have been transmitted) and **translations** – also **retro digitalised editions**
+3.  Focus: **critical editions** (with extensive documentation of the manuscript tradition to be able to *evaluate* editorial decissions)
+4.  Data is **open access** (CC-BY, CC-BY-SA – some exceptions)
+5.  Easy **reuse of data** (data publication <https://github.com/PatristicTextArchive/> + Zenodo; API \[cts, git\])
+6.  **Web publication** (with several access routes and some tools)
+7.  Using **Standards**: [TEI (P5)](https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html) (*adapted Schema*), [CapiTainS Guidelines](http://capitains.org/) (CTS; structure of files/folders), normdata (annotations).
+
+
+## Following the [*FAIR principles*](https://www.go-fair.org/fair-principles/) {.smaller}
+
+::: {.callout-warning icon="false"}
+## *F*indable
+
+-   for example: machine-readable metadata
+:::
+
+::: {.callout-important icon="false"}
+## *A*ccessible
+
+-   for example: Website (https://pta.bbaw.de)
+-   for example: API (https://pta.bbaw.de/api)
+-   for example: data repositories (https://github.com/PatristicTextArchive)
+:::
+
+::: {.callout-note icon="false"}
+## *I*nteroperable
+
+-   linking with other projects (for example: [Clavis Clavium](https://clavis.brepols.net/clacla/Default.aspx), [Pleiades Gazetter](https://pleiades.stoa.org/))
+-   refering to norm data (for example: [Diktyon-IDs for Greek manuscripts](http://www.diktyon.org/en/))
+-   using normalized vocabulary (for example: [Dublin Core Metadata Initiative](https://dublincore.org/specifications/dublin-core))
+-   using standards (for example: [TEI](https://tei-c.org), [CapiTainS](http://capitains.org/))
+:::
+
+::: {.callout-tip icon="false"}
+## *R*eusable
+
+-   Open Access
+-   well documented (edition guidelines and TEI schema, frontend documentation)
+:::
+
+
+## Linking with other projects
+
+![PTA Linked Open Data](images/PTA-LOD.png)
+
+# PTA: Data
+
+## PTA: Data
+
+Texts
+
+:   {{< fa brands github >}} <https://github.com/PatristicTextArchive/pta_data> [{{< ai zenodo >}}](https://doi.org/10.5281/zenodo.4066796)
+
+Manuscript descriptions
+
+:   {{< fa brands github >}} <https://github.com/PatristicTextArchive/pta_manuscripts> [{{< ai zenodo >}}](https://doi.org/10.5281/zenodo.7595081)
+
+Metadata
+
+:   {{< fa brands github >}} <https://github.com/PatristicTextArchive/pta_metadata> [{{< ai zenodo >}}](https://doi.org/10.5281/zenodo.6822080)
+
+Edition guidelines
+
+:   {{< fa brands github >}} <https://github.com/PatristicTextArchive/Schema> [{{< ai zenodo >}}](https://doi.org/10.5281/zenodo.3737666)
+
+
+# PTA: Web-Interface
+
+## Multiple approaches available
+
+-   authors and works (texts)
+-   manuscript descriptions
+-   indices (biblical and other references, persons, places)
+-   search (fulltext, distance; metadata)
+
+## Authors and Works
+
+![](images/Texts-Authors.png)
+
+## Manuscripts
+
+![](images/Manuscripts.png)
+
+## Indices
+
+:::: columns
+
+::: {.column width="33%"}
+![Bible index](images/Bibleindex.png)
+:::
+
+::: {.column width="33%"}
+![Persons index](images/Personsindex.png)
+:::
+
+:::{.column width="33%"}
+
+![Places index](images/Placesindex.png)
+:::
+
+::::
+
+## Search
+
+![Distance Search](images/Search.png)
+
+
+## “Reader” interface 
+
+![(2\[4\]-column; versioning)](images/Edition2Column.png)
+
+## Visualisation of metadata
+
+![Visualisation of metadata (sources, identifiers) and recommendations for reuse (citation, permalink, versions, license)](images/EditionDocumentWidget.png)
+
+## Visualisation of variants
+
+![Variant “apparatus”](images/EditionVariant.png)
+
+## Visualisation of annotations
+
+![Enrichment of annotations (*here*: biblical references, *also*: persons, places; using authority files)](images/EditionBible.png)
+
+## Manuscript transcriptions
+
+![Embedding of digitized images of manuscripts (via IIIF standard)](images/TranscriptionIIIF.png)
+
+## Manuscript database
+
+:::: columns
+
+::: {.column width="50%"}
+![Manuscripts overview](images/Manuscripts.png)
+:::
+
+::: {.column width="50%"}
+![Manuscript database entry](images/ManuscriptEntry.png)
+:::
+
+
+::::
+
+
+
+
+# Implementation
+
+## Linguistic analysis
+
+::::: columns
+::: {.column width="30%"}
+[Classical Language Dictionary (CLD)](https://cld.bbaw.de) for Greek and Latin, using [SEDRA API](https://sedra.bethmardutho.org/about/openapi) for Syriac
+:::
+
+::: {.column width="70%"}
+![CLD API](images/Screenshot%202024-06-28%20at%2008-05-52%20OpenAPI%20CLD.png){height="100%"}
+:::
+:::::
+
+
+## oXygen-Authormode-addon
+
+![Screenshot oXygen editor](images/ediarum.PNG)
+
+## CollateX - automatic collation of witnesses
+
+![Screenshot of CollateX HTML-Output](images/Collatex.png)
+
+## Technical implementation
+
+::::: columns
+::: {.column width="40%"}
+-   <https://pta.bbaw.de/project/documentation>
+-   programming: Dr. Martin Fechner ([backend, API](https://www.ediarum.org)) and Jan Köster (frontend), BBAW
+:::
+
+::: {.column width="60%"}
+![Software architecture](images/20-Jahre-TELOTA_pta_softwarearchitektur){width="80%"}
+:::
+:::::
+
+::: attribution
+diagram by M. Fechner, adapted by A. v. Stockhausen
+:::
+
+# Thank you!
+
+## Contact
+
+Dr. Annette von Stockhausen
+
+-   {{< fa envelope >}} [annette.von_stockhausen\@bbaw.de](mailto:annette.von_stockhausen@bbaw.de){.email}
+-   {{< fa brands mastodon >}} [https://fedihum.org/\@avstockhausen](https://fedihum.org/@avstockhausen){.uri}
+
+BBAW, Akademienvorhaben „Die alexandrinische und antiochenische Bibelexegese in der Spätantike“
+
+-   {{< fa house >}} <https://bibelexegese.bbaw.de>
+-   {{< fa brands mastodon >}} [https://hcommons.social/\@bibelexegese](https://hcommons.social/@bibelexegese){.uri}
+-   {{< fa brands bluesky >}} <https://bsky.app/profile/bibelexegese.bsky.social>
